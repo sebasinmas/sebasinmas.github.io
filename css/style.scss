@@ -65,6 +65,12 @@ section {
     border-radius: 10px;
     border: 1px solid black;
     overflow: hidden;
+    padding: 30px;
+    position: relative;
+    // background-color: aquamarine;
+    h1{
+        margin-bottom: 5px;
+    }    
     .contenido{
         display:flex;
     }
@@ -73,8 +79,41 @@ section {
         height: 200px;
         border-radius: 50%;
         object-fit: cover;
+        border: white 1px solid;
+        transition: box-shadow .1s;
     }
+    img:hover{
+        box-shadow: white 0px 0px 10px;
+    }
+    .botoncitos{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: bottom;
+        position: absolute;
+        bottom: 30px;
+        margin-left: 0;
+        .btn{
+            text-decoration: none;
+            color: purple;
+            font-size: 2rem;
+            font-weight: 300;
+            padding: 10px 20px;
+            border-radius: 200px;
+            border: white 1px solid;
+            margin-right: 150px;
+            transition: all .5s;
+        }
+        .btn:hover{
+            background-color: white;
+            color: black;
+            box-shadow: white 0px 0px 10px;
+        }
+    }
+
 }
+
+
 .show{
     transform: translateX(0);
     filter: blur(0);

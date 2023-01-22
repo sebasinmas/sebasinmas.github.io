@@ -61,6 +61,11 @@ section {
   border-radius: 10px;
   border: 1px solid black;
   overflow: hidden;
+  padding: 30px;
+  position: relative;
+}
+.tarjeta h1 {
+  margin-bottom: 5px;
 }
 .tarjeta .contenido {
   display: flex;
@@ -71,6 +76,36 @@ section {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  border: white 1px solid;
+  transition: box-shadow 0.1s;
+}
+.tarjeta img:hover {
+  box-shadow: white 0px 0px 10px;
+}
+.tarjeta .botoncitos {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: bottom;
+  position: absolute;
+  bottom: 30px;
+  margin-left: 0;
+}
+.tarjeta .botoncitos .btn {
+  text-decoration: none;
+  color: purple;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 10px 20px;
+  border-radius: 200px;
+  border: white 1px solid;
+  margin-right: 150px;
+  transition: all 0.5s;
+}
+.tarjeta .botoncitos .btn:hover {
+  background-color: white;
+  color: black;
+  box-shadow: white 0px 0px 10px;
 }
 
 .show {
